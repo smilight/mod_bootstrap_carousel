@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="2.5.0" method="upgrade">
+    <name>Bootstrap carousel</name>
+
+    <creationDate>10/04/2014</creationDate>
+    <author>Pershin Alexey</author>
+    <authorEmail>shensi@ukr.net</authorEmail>
+    <authorUrl>http://hatsco.com.ua</authorUrl>
+    <copyright>Pershin Alexey</copyright>
+    <license>GPL</license>
+    <version>1.0</version>
+    <description>Модуль карусели с использованием jQuery плагина Bootstrap</description>
+
+    <files>
+        <folder>js</folder>
+        <folder>js/jquery</folder>
+        <folder>css</folder>
+        <folder>tmpl</folder>
+        <filename>tmpl/default.php</filename>
+        <filename>css/bootstrap.css</filename>
+        <filename>css/bootstrap-theme.css</filename>
+        <filename>js/bootstrap.min.js</filename>
+        <filename>js/jquery/jquery-1.11.0.min.js</filename>
+        <filename>js/jquery/jquery-2.1.0.min.js</filename>
+        <filename>js/jquery/jquery-migrate-1.2.1.min.js</filename>
+        <filename module="mod_bootstrap_carousel">mod_bootstrap_carousel.php</filename>
+        <filename>mod_bootstrap_carousel.xml</filename>
+        <filename>helper.php</filename>
+    </files>
+
+    <config>
+
+        <fields name="params">
+
+            <fieldset name="basic">
+
+                <field name="jquery" type="list" default="0" label="Использовать Jquery?" description="Использовать Jquery?" filter="word">
+                    <option value="no">Нет</option>
+                    <option value="stable">1.11.0</option>
+                    <option value="last">2.1.0</option>
+                </field>
+
+                <field name="bootstrap" type="list" default="yes" label="Включен на сайте Bootstrap?" description="Включен на сайте Bootstrap?" filter="word">
+                    <option value="no">Нет</option>
+                    <option value="yes">Да</option>
+                </field>
+                <field name="pager" type="list" default="yes" label="Включить постраничную навигацию?" description="Включить постраничную навигацию?" filter="word">
+                    <option value="no">Нет</option>
+                    <option value="yes">Да</option>
+                </field>
+
+            </fieldset>
+
+            <fieldset name="image 1" label="Слайд 1" >
+
+                <field name="img1" type="media" label="Картинка" description="Картинка" />
+                <field name="title1" type="textarea" label="Название" description="Название" />
+                <field name="descr1" type="editor" label="Описание" description="Описание" />
+                <field name="btn1" type="textarea" label="Надпись на кнопке" description="Надпись на кнопке" />
+                <field name="btn1l" type="text" label="ID статьи" description="ID статьи" />
+            </fieldset>
+
+            <fieldset name="image 2" label="Слайд 2" >
+                <field name="img2" type="media" label="Картинка" description="Картинка" />
+                <field name="title2" type="textarea" label="Название" description="Название" />
+                <field name="descr2" type="editor" label="Описание" description="Описание" />
+                <field name="btn2" type="textarea" label="Надпись на кнопке" description="Надпись на кнопке" />
+                <field name="btn2l" type="textarea" label="ID статьи" description="ID статьи" />
+
+            </fieldset>
+
+            <fieldset name="image 3" label="Слайд 3" >
+                <field name="img3" type="media" label="Картинка" description="Картинка" />
+                <field name="title3" type="textarea" label="Название" description="Название" />
+                <field name="descr3" type="editor" label="Описание" description="Описание" />
+                <field name="btn3" type="textarea" label="Надпись на кнопке" description="Надпись на кнопке" />
+                <field name="btn3l" type="textarea" label="ID статьи" description="ID статьи" />
+
+
+            </fieldset>
+
+            <fieldset name="image 4" label="Слайд 4" >
+                <field name="img4" type="media" label="Картинка" description="Картинка" />
+                <field name="title4" type="textarea" label="Название" description="Название" />
+                <field name="descr4" type="editor" label="Описание" description="Описание" />
+                <field name="btn4" type="textarea" label="Надпись на кнопке" description="Надпись на кнопке" />
+                <field name="btn4l" type="textarea" label="ID статьи" description="ID статьи" />
+
+            </fieldset>
+
+            <fieldset name="image 5" label="Слайд 5" >
+                <field name="img5" type="media" label="Картинка" description="Картинка" />
+                <field name="title5" type="textarea" label="Название" description="Название" />
+                <field name="descr5" type="editor" label="Описание" description="Описание" />
+                <field name="btn5" type="textarea" label="Надпись на кнопке" description="Надпись на кнопке" />
+                <field name="btn5l" type="textarea" label="ID статьи" description="ID статьи" />
+
+            </fieldset>
+
+            <fieldset name="image 6" label="Слайд 6" >
+                <field name="img6" type="media" label="Картинка" description="Картинка" />
+                <field name="title6" type="textarea" label="Название" description="Название" />
+                <field name="descr6" type="editor" label="Описание" description="Описание" />
+                <field name="btn6" type="textarea" label="Надпись на кнопке" description="Надпись на кнопке" />
+                <field name="btn6l" type="textarea" label="ID статьи" description="ID статьи" />
+
+            </fieldset>
+
+        </fields>
+
+    </config>
+
+</extension>
